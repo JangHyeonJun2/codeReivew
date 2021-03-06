@@ -18,13 +18,13 @@ public class Q4673 {
         System.out.print(sb);
     }
 
-    private static int findSelfNumber(int number) {
+    private static int findSelfNumber(int number) { //39
         int tmpNumber = number; //매개변수로 들어온 숫자는 안건드리는게 좋다.
         int tmpSum = tmpNumber; //여기 부부 조심!!! 처음에 tmpSum을 매개변수로 들어온 인자로 초기화를 해줘야한다.
 
         while (tmpNumber != 0) {
-            tmpSum = tmpSum + (tmpNumber % 10); //일의 자리수가 나온다.
-            tmpNumber = tmpNumber/10; //몫을 꺼낸다.
+            tmpSum  = tmpSum  + (tmpNumber % 10); //일의 자리수가 나온다.
+            tmpNumber  = tmpNumber/10; //몫을 꺼낸다.
         }
         return tmpSum;
     }
