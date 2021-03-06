@@ -9,7 +9,8 @@ public class Q2941 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();
         int count = 0;
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {//각 조건문에서 i를 ++해주고 여기에서 한번 더 i++를 해주니 2 or 3번을 해준다.
+                                                //그리고 예외적으로 아무것도 만족하지 않는다면 count만 ++해주고 i는 여기에서 1번만 ++해준다.
             char ch = str.charAt(i);
             if(ch == 'c') { // 만약 ch 가 c 라면?
                 if(str.charAt(i + 1) == '=') { //만약 ch 다음 문자가 '=' 이라면? // i+1 까지가 하나의 문자이므로 다음 문자를 건너 뛰기 위해 1 증가
