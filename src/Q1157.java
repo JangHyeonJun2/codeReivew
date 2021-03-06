@@ -31,10 +31,7 @@ public class Q1157 {
             }
         }
         System.out.println(maxStr);
-
-
-
-
+        
 
 //        int[] arr = new int[26]; // 영문자의 개수는 26개임
 //        String s = br.readLine();
