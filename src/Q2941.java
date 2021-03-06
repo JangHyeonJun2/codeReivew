@@ -53,7 +53,7 @@ public class Q2941 {
             count++;
         }
         System.out.println(count);
-
+        
 
 
 
