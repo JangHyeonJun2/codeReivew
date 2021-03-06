@@ -12,6 +12,7 @@ public class Q4344 {
 //        System.out.format("%.3%n", percentValue);
         System.out.printf("%.3f%%%n",percentValue);
     }
+    
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -30,4 +31,5 @@ public class Q4344 {
             q.solution(recordArr,sum);
         }
     }
+
 }
