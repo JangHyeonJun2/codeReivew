@@ -22,8 +22,8 @@ public class Q1929 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int M = sc.nextInt();
-        int N = sc.nextInt();
+        int M = sc.nextInt(); //3
+        int N = sc.nextInt(); // 15
         Q1929 q = new Q1929();
 
         q.solution(M,N);
