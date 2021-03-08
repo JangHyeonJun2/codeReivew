@@ -10,7 +10,7 @@ public class Q11729 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Q11729 q = new Q11729();
-        q.hanoi("A","B","C",sc.nextInt());
+        q.hanoi("1","2","3",sc.nextInt());
         Iterator<Position> iterator = q.list.iterator();
         System.out.println(q.count);
         while (iterator.hasNext()) {
@@ -37,23 +37,6 @@ class Position {
         this.f = f;
         this.t = t;
     }
-
-    public String getF() {
-        return f;
-    }
-
-    public void setF(String f) {
-        this.f = f;
-    }
-
-    public String getT() {
-        return t;
-    }
-
-    public void setT(String t) {
-        this.t = t;
-    }
-
     public void display() {
         System.out.println(this.f + " " + this.t);
     }
