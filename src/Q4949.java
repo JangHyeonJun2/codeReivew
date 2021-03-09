@@ -10,18 +10,17 @@ public class Q4949 {
                 if (ch == '(' || ch == '[') {
                     stack.push(ch);
                 } else if (ch == ')') {
-                    if (stack.isEmpty()) {
+                    if (stack.isEmpty() || stack.peek() != '(') {
                        return "no";//여기서 리턴 false해도 상관없는게 처음부터 ')'이것이 나오면 갯수가 안맞으니깐 상관없음.
 
-                    }
-                    if(stack.peek() == '(')
+                    }else
                         stack.pop();
                 } else if (ch == ']') {
-                    if (stack.isEmpty()) {
+                    if (stack.isEmpty() || stack.peek() != '[') {
                         return  "no";//여기서 리턴 false해도 상관없는게 처음부터 ')'이것이 나오면 갯수가 안맞으니깐 상관없음.
 
                     }
-                    if(stack.peek() == '[')
+                    else
                         stack.pop();
                 }
             }
