@@ -1,11 +1,8 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Q11729V2 {
     public static StringBuilder sb = new StringBuilder();
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int circle = sc.nextInt();
         sb.append((int)Math.pow(2,circle) - 1).append("\n");
