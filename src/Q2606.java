@@ -49,7 +49,7 @@ public class Q2606 {
         int c1,c2;
         int[][] computers = new int[cn][cn];
 
-        for (int i =0; i<nn; i++) {
+        for (int i =0; i<nn; i++) {//네트워크 수 만큼 반복문을 돌리면 된다.
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
             c1 = Integer.parseInt(st.nextToken());
             c2 = Integer.parseInt(st.nextToken());
