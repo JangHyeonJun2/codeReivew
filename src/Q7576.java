@@ -55,8 +55,8 @@ public class Q7576 {
             }
 
 //            토마토 밭 출력하는 함수
-            print(arr);
-            System.out.println();
+//            print(arr);
+//            System.out.println();
         }
     }
 
