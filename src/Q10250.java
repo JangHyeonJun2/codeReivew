@@ -38,7 +38,8 @@ public class Q10250 {
             int N = sc.nextInt();
 
 
-            System.out.println(q.solution(H,W,N));
+            int solution = q.solution(H, W, N);
+            System.out.println(solution);
         }
     }
 }
